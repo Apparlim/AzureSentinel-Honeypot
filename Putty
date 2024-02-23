@@ -1,1 +1,19 @@
+#!/bin/bash
+
+# Update the package list
 sudo apt update
+
+# Upgrade installed packages
+sudo apt upgrade -y
+
+# Install Git
+sudo apt install -y git
+
+# Clone the repository
+git clone https://github.com/username/tpotce.git
+
+# Change to the installation directory
+cd tpotce/iso/installer/
+
+# Run the install script with user type
+./install.sh --type=user
