@@ -1,0 +1,29 @@
+import logging
+import socket
+
+def honeypot_sensor():
+    logging.info("Honeypot sensor started.")
+
+    # Set up socket for capturing network activity
+    host = '0.0.0.0'
+    port = 8080
+
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        s.bind((host, port))
+        s.listen()
+
+        logging.info(f"Honeypot listening on {host}:{port}")
+
+        while True:
+            conn, addr = s.accept()
+            with conn:
+                logging.info(f"Connection from {addr}")
+                data = conn.recv(1024)
+                logging.info(f"Received data: {data}")
+
+if __name__ == "__main__":
+    # Set up logging
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+
+    # Start the honeypot sensor
+    honeypot_sensor()
