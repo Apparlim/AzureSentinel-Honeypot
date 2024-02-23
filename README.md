@@ -2,7 +2,7 @@
 • Implemented an advanced honeypot solution to proactively detect and analyze potential security threats, enhancing overall system resilience.
 ![image](https://github.com/Apparlim/AzureSentinel-Honeypot/assets/142485188/caedf37e-1607-4612-b748-a00f0c88782b)
 
-<h1>🤖 How to perfome </h1>
+<h1>🤖 Setup Instructions </h1>
 • Create a VM in Azure for Honeypot. 
 
 • Download Putty.          
