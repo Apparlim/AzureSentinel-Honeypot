@@ -44,17 +44,17 @@
 
 <H4> Install Honeypot Software:</H4>
 
-• After accessing the VM via SSH, update the package list: sudo apt-get update
-• Install any required dependencies for the honeypot software.
-• Clone the AzureSentinel-Honeypot repository or download the latest release to your VM.
-• Navigate to the downloaded or cloned directory: cd AzureSentinel-Honeypot
+• After accessing the VM via SSH, update the package list: sudo apt-get update                                                                                               
+                                                                                                                                                                            • Install any required dependencies for the honeypot software.                                                                                                                
+                                                                                                                                                                            • Clone the AzureSentinel-Honeypot repository or download the latest release to your VM.                                                                                                                                                               
+• Navigate to the downloaded or cloned directory: cd AzureSentinel-Honeypot.                                                                                                          
 • Follow theSpecific instructions to complete the installation of the honeypot.
 
 <h2> Step 3: Verify Installation</h2>
 
 <h4> Start the Honeypot Service: </h4>
 
-• From within the project directory, start the honeypot service. This could be through a script or command specific to the honeypot you are using.
+• From within the project directory, start the honeypot service. This could be through a script or command specific to the honeypot you are using.                              
 • Ensure that the service is running correctly and listening on the specified ports.
 
 <h4> Test the Honeypot:</h4>
