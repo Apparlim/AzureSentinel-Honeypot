@@ -103,7 +103,7 @@
 
 <img width="960" alt="Screenshot 2024-02-23 000347" src="https://github.com/Apparlim/AzureSentinel-Honeypot/assets/142485188/65f35558-0948-43f2-9a3d-86e8f7b8c4b1">
 
-<H2> License </H2>
+
 
 ## License
 
