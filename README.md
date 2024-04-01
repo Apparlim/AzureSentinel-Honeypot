@@ -1,18 +1,74 @@
 # 🧑‍💻 AzureSentinel-Honeypot
 • Implemented an advanced honeypot solution to proactively detect and analyze potential security threats, enhancing overall system resilience.
-![image](https://github.com/Apparlim/AzureSentinel-Honeypot/assets/142485188/caedf37e-1607-4612-b748-a00f0c88782b)
 
-<h1>🤖 Setup Instructions </h1>
-• Create a VM in Azure for Honeypot. 
+![image](https://github.com/Apparlim/AzureSentinel-Honeypot/assets/142485188/f07fc134-7b46-475c-a292-9718ca8f6ef4)
 
-• Download Putty.          
-• Click on VM and create a new azure virtual machine.     
-• Ensure it runs on Debian.       
-• Go to Networking and check if it has added DenyAllinBond                 
-• Open Putty       
-• Provide IP address                 
 
-![image](https://github.com/Apparlim/AzureSentinel-Honeypot/assets/142485188/1633f5ae-c7c8-45ed-be8b-016ba69278aa)
+<h1>🤖 Installation Instructions </h1>
+<h2> Requirements</h2>
+• An active Microsoft Azure account.
+
+• Basic knowledge of VM ( Virtual Machine) and networking in Azure.                                                          
+ • SSH client (e.g.., Putty) installed on your local machine.      
+ 
+<h2> Step 1: Set Up Azure Virtual Machine (VM) </h2>
+                                                                                                                      
+ <h4>•Log in to Azure Portal: </h4>                                                                                                     
+                                                                                                                             
+                                                                                                                           
+ Go to Azure Portal ( https://azure.microsoft.com/en-us) and sign in.                                 
+
+
+
+
+
+
+ <h4> • Create a New VM:  </h4>                                                                                                      
+                                                                                                                    
+•Navigate to the "Virtual machines" section and click on "Create" and after that "Virtual machine".                           
+• Fill in the necessary details like subscription, resource group, VM name, region, etc.                                             
+• Select Debian as the operating system image.                                                                                   
+• Choose the appropriate size for the VM based on the expected load.                                                                  
+• Go to the additional options like disks, networking, management, and advanced settings.                                    
+                                                                                                                            <h4> • Networking Setting  </h4>  
+                                                                                                                            
+• Ensure that the network security group (NSG) attached to the VM's network interface has a rule to deny all inbound traffic 
+  which you can adjust based on your network policy.                                                                                                                                                                                                                                             
+ • Make sure on allowing specific ports that are necessary for the honeypot operation and management.                                                                                                                      
+ <h2> Step 2: Install and Configure the Honeypot</h2>
+ 
+<h4> Access the VM:</h4>
+
+ • Once the VM is set up, obtain its public IP address from the Azure portal.
+• Open Putty and connect to the VM using its IP address .
+
+<H4> Install Honeypot Software:</H4>
+
+• After accessing the VM via SSH, update the package list: sudo apt-get update
+• Install any required dependencies for the honeypot software.
+• Clone the AzureSentinel-Honeypot repository or download the latest release to your VM.
+• Navigate to the downloaded or cloned directory: cd AzureSentinel-Honeypot
+• Follow theSpecific instructions to complete the installation of the honeypot.
+
+<h2> Step 3: Verify Installation</h2>
+
+<h4> Start the Honeypot Service: </h4>
+
+• From within the project directory, start the honeypot service. This could be through a script or command specific to the honeypot you are using.
+• Ensure that the service is running correctly and listening on the specified ports.
+
+<h4> Test the Honeypot:</h4>
+
+• Run an attack or use a testing tool to verify that the honeypot is capturing and logging activities as expected.
+
+<h4> Step 4:Post-Installation Setup </h4>
+
+• Configure any additional settings for monitoring, alerting, or integrating with Azure Sentinel for enhanced security analytics and threat management.
+
+
+<h2> Diagram </h2>
+
+![image](https://github.com/Apparlim/AzureSentinel-Honeypot/assets/142485188/728e5c66-611c-4576-b2fb-0c4620df671b)
 
 
 
